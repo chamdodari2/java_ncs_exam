@@ -78,8 +78,7 @@ public class TitlePanel  extends JPanel {
 		validCheck();
 		typeCheck();		
 	
-	////////
-		//String tNo = String.format("T%03d", getTitle().gettNo());
+
 		int tNo = Integer.parseInt(tfTNo.getText().trim());
 		String tName = tfTName.getText().trim();
 		return new Title(tNo, tName);

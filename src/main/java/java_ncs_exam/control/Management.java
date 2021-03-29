@@ -30,10 +30,9 @@ public class Management extends JFrame implements ActionListener {
 	private JPanel contentPane;
 
 	public Management() {
-//		setService();  //서비스 연결기능 만듬
-		service = new TitleService(); // 서비스에 있는 메소드 쓸거얌
-		initialize(); // service = new TitleService(); // 위에꺼 한줄로로 변경
-		// tableLoadData(); // loadDate기능 - 셋서비스,로드데이터 두줄을 하나의 메소드로 묶음
+		service = new TitleService(); 
+		initialize(); 
+		
 
 	}
 
@@ -154,8 +153,8 @@ public class Management extends JFrame implements ActionListener {
 		service.addTitle(title);
 		pList.loadData();
 		pContent.clearTf();
-		JOptionPane.showMessageDialog(null, title.toString2() + "이(가) 추가되었습니다."); //////////// title dto에서 toString 2를
-																				//////////// 만들어줬다!!
+		JOptionPane.showMessageDialog(null, title.toString2() + "이(가) 추가되었습니다."); 
+																			
 
 	}
 

@@ -54,7 +54,7 @@ public class TitleDaoImpl implements TitleDao {
 		String sql = "select tNo, tName from title where tNo = ?";
 		try (Connection con = JdbcConn.getConnection(); 
 				PreparedStatement pstmt = con.prepareStatement(sql)) {
-			pstmt.setInt(1,title.gettNo());  //첫번쨰 매개변수에 employee에 있는 getempno를 넣어줘야한다.
+			pstmt.setInt(1,title.gettNo());  
 			try (ResultSet rs = pstmt.executeQuery()) {  //
 				
 				if (rs.next()) {  

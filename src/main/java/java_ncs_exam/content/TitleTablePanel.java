@@ -23,7 +23,7 @@ public  class TitleTablePanel extends JPanel {
 	protected List<Title> list;
 	
 	private TitleService service;
-	//= new TitleService();   
+	
 	
 	public TitleTablePanel() {
 
@@ -127,7 +127,7 @@ public  class TitleTablePanel extends JPanel {
 	}
 	public Title getItem() {
 		int row = table.getSelectedRow();
-		 //테이블의 제일 앞에있는거 가져오기	
+		
 		if(row == -1 ) {
 			throw new NotSelectedException();
 		}

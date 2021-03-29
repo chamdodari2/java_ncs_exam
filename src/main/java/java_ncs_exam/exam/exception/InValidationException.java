@@ -1,7 +1,7 @@
-package java_ncs_exam.exam.exception; //////취소버튼 누르면 클린 기능 추가하기!!
+package java_ncs_exam.exam.exception; 
 
 @SuppressWarnings("serial")
-public class InValidationException extends RuntimeException { //전파. 계속 위롱 ㅗㄹ라간다
+public class InValidationException extends RuntimeException { 
 
 	public InValidationException() {
 		super("취소되었습니다.");
