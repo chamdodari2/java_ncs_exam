@@ -3,7 +3,7 @@ package java_ncs_exam;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import java_ncs_exam.control.TitleManager;
+import java_ncs_exam.control.Management;
 
 public class TitleMain extends JFrame {
 
@@ -12,7 +12,7 @@ public class TitleMain extends JFrame {
 	
 	public static void main(String[] args) {
 		
-					TitleManager frame = new TitleManager();
+					Management frame = new Management();
 					frame.setVisible(true);
 				
 	}

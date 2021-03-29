@@ -21,7 +21,7 @@ import java_ncs_exam.exam.exception.NotSelectedException;
 import java_ncs_exam.exam.exception.SqlConstraintException;
 import java_ncs_exam.service.TitleService;
 
-public class TitleManager extends JFrame implements ActionListener {
+public class Management extends JFrame implements ActionListener {
 	private TitleService service;
 	private TitleTablePanel pList;
 	private TitlePanel pContent;
@@ -29,7 +29,7 @@ public class TitleManager extends JFrame implements ActionListener {
 	private JButton btnClear;
 	private JPanel contentPane;
 
-	public TitleManager() {
+	public Management() {
 //		setService();  //서비스 연결기능 만듬
 		service = new TitleService(); // 서비스에 있는 메소드 쓸거얌
 		initialize(); // service = new TitleService(); // 위에꺼 한줄로로 변경
